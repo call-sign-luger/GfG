@@ -14,7 +14,6 @@ class Solution{
         while(j<S.length()){
             if(S[i]==S[j]){
                 S.erase(j,1);
-
             }
             else{
                 i++;
