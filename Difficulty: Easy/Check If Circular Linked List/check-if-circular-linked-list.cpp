@@ -38,7 +38,7 @@ class Solution {
         }
         
         Node*temp=head;
-        while(temp->next!=NULL){
+        while(temp!=NULL){
             if(temp->next==head){
                 return true;
             }
