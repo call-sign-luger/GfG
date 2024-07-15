@@ -60,7 +60,7 @@ class Solution
         // Step A: Reverse the first k nodes of the linked list
         node* prev = nullptr;
         node* curr = head;
-        node* forward=nullptr;
+        node* forward=curr->next;
         int count = 0;
         while (count < k && curr != nullptr) {
             forward = curr->next;
