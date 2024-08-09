@@ -66,7 +66,7 @@ public:
         
         // STEP 2: REVERSE THE SECOND HALF OF THE LIST
         Node* reverseLLHead = reverse(slow);
-        
+
         // STEP 3: COMPARE THE FIRST AND THE SECOND HALF
         Node* temp1 = head;
         Node* temp2 = reverseLLHead;
@@ -77,10 +77,6 @@ public:
             temp1 = temp1->next;
             temp2 = temp2->next;
         }
-        
-        // (Optional) STEP 4: RESTORE THE LIST IF REQUIRED
-        reverse(reverseLLHead);
-        
         return true;
     }
 };
